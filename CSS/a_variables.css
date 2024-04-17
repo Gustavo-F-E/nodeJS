@@ -1,0 +1,28 @@
+:root {
+
+  /* Fuentes*/
+  @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  --font-size: 16px;/* var(--font-size) */
+
+  /*Colores*/
+
+  --color-principal-de-fondo: #aaa; /* var(--color-principal-de-fondo) */
+  --color-optativo-de-fondo: #000; /* var(--color-optativo-de-fondo) */
+  --color-principal: #aaa;/* var(--color-principal) */
+  --color-secundario: #222;/* var(--color-secundario) */
+  --color-principal-modal: #aaaaaa99;/* var(--color-principal-moda) */
+  --color-secundario-modal: #22222299;/* var(--color-secundario-modal) */
+  --color-botones:rgba(0, 0, 255, 0.5);/* var(--color-botones) */
+  --color-botones-hover:rgba(0, 0, 255, 0.9);/* var(--color-botones-hover) */
+  --color-panel:rgba(0, 0, 255, 0.2);/* var(--color-panel) */
+
+  /*Tamaños*/
+  --ancho-contenedor: 1200px;/* var(--ancho-contenedor) */
+  --tamanio-botones: 5rem;/* var(--tamanio-botones) */
+
+  /*Distancias*/
+  --distancia-botones-derecha: 1rem;/* var(--distancia-botones-derecha) */
+  --distancia-botones-abajo: 1rem;/* var(--distancia-botones-abajo) */
+}
+

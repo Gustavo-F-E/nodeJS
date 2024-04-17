@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veo veo</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/destinos.css">
+    <link rel="icon" type="image/x-icon" href="ASSETS/favicon/cine.svg">
+    <!--Metaetiquetas-->
+    <!--link rel="canonical" href="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
+        <!--colocar direccion real cuando se haga el despliegue---->
+        <!--meta property="og:title" content="Veterinaria AssistVet" /-->
+        <!--meta
+            property="og:description"
+            content="Veterinaria AssistVet: Todo para tu mascota. Alimentos balanceados, atención médica, servicios de peluquería y mucho, mucho más!!!"
+        /-->
+        <!--meta
+            property="og:image"
+            content="assets/images/head/logoasistvet-png.png"
+        /-->
+        <!--meta property="og:image:width" content="1200"-->
+        <!--meta property="og:image:height" content="630"-->
+        <!--meta property="og:url" content="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
+  </head>
+  <body>
+    <header>
+      <section data-dark>
+        <h1>Veo veo</h1>
+      </section>
+    </header>
+    <button class="panel-btn hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <button class="scroll-top-btn hidden">&#11014</button>
+    <!--https://emojipedia.org/ -->
+    <button class="dark-theme-btn">🌛</button>
+    <aside class="panel">
+      <nav class="menu">
+        <ul>
+          <li><a href="#top-ten">Top 10 Argentina</a></li>
+          <li><a href="#accion">Acción</a></li> 
+          <li><a href="#romanticas">Romanticas</a></li> 
+          <li><a href="#terror">Terror</a></li> 
+        </ul>
+      </nav>
+    </aside>
+    <main >
+      <section id="top-ten" class="section" data-dark>
+        <h2>Top 10 Argentina</h2>
+        <!------------Buenos aires----------->
+        <div class="centrador reverse">
+          <div id="buenos-aires" class="contenedor-buenos-aires">
+              <div class="galeria-de-imagenes-BuenosAires">
+                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">El Obelisco</h3>
+                  <img  src="ASSETS/Imagenes/Buenos-Aires/obelisco.jpg">
+              </div>
+              <div class="galeria-de-imagenes-BuenosAires">
+                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;" >Caminito</h3>
+                  <img src="ASSETS/Imagenes/Buenos-Aires/barrio-boca.jpg">
+              </div>
+              <div class="galeria-de-imagenes-BuenosAires">
+                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">Teatro El Ateneo</h3>
+                  <img src="ASSETS/Imagenes/Buenos-Aires/planetario.jpg">
+              </div>
+              <div class="galeria-de-imagenes-BuenosAires">
+                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">Los Bosques de Palermo</h3>
+                  <img  src="ASSETS/Imagenes/Buenos-Aires/jardin-japones2.jpg">
+              </div>
+              <div class="galeria-de-imagenes-BuenosAires">
+                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">Caballito</h3>
+                  <img  src="ASSETS/Imagenes/Buenos-Aires/floralis.jpg">
+              </div>
+              <div class="galeria-de-imagenes-BuenosAires">
+                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">El Planetario</h3>
+                  <img  src="ASSETS/Imagenes/Buenos-Aires/ciudad.jpg">
+              </div>
+              <button class="boton izquierdo" onclick="cambiarImagenBuenosAires(-1)" style="color: yellow;">&#10094;</button>
+              <button class="boton derecho" onclick="cambiarImagenBuenosAires(1)" style="color: yellow;">&#10095;</button>
+              <div class="contenedor-miniaturas">
+                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(1)" src="ASSETS/Imagenes/Buenos-Aires/obelisco.jpg">
+                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(2)" src="ASSETS/Imagenes/Buenos-Aires/barrio-boca.jpg">
+                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(3)" src="ASSETS/Imagenes/Buenos-Aires/planetario.jpg">
+                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(4)"src="ASSETS/Imagenes/Buenos-Aires/jardin-japones2.jpg">
+                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(5)" src="ASSETS/Imagenes/Buenos-Aires/floralis.jpg">
+                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(6)"src="ASSETS/Imagenes/Buenos-Aires/ciudad.jpg">
+            </div>
+          </div>
+          <div class="textos">
+            <h2 class="titulo-galeria-de-imagenes" style="color: black;">Buenos Aires</h2>
+            <p style="color: black;">Es el destino más visitado de la Argentina por ser su capital y es el puente a otros destinos de este hermoso país. “Descubriendo Argentina” te invita a conocer su cultura, sus barrios, sus monumentos, su arquitectura y su adrenalina típica de una gran ciudad te invita a recorrerla en cualquier época del año</p>
+            <button class="boton-link" style="background-color: yellow;"><a target="_blank" href="https://turismo.buenosaires.gob.ar/es" style="color: black;">Para saber mas click aqui</a></button>
+          </div>
+      </div>
+<br>
+      </section>
+      <section id="accion" class="section" data-dark>
+        <h2>Acción/h2>
+      </section>
+      <section id="romanticas" class="section" data-dark>
+        <h2>Romanticas</h2>
+      </section>
+      <section id="terror" class="section" data-dark>
+        <h2>Terror</h2>
+      </section>
+    </main>
+    <footer>
+      <h2>Grupo 24</h2>
+      <ul>
+        <li>Sara Nuñez</li>
+        <li>Benítez Daniel</li>
+        <li>Eichhorn Gustavo</li>
+        <li>Edgardo Padovan</li>
+      </ul>
+    </footer>
+
+
+<script src="JS/indexJS.js" type="module"></script>
+<script>
+  let indiceImagenesBuenosAires = 1;
+mostrarImagenBuenosAires(indiceImagenesBuenosAires);
+
+function cambiarImagenBuenosAires(n) {
+    mostrarImagenBuenosAires (indiceImagenesBuenosAires += n);
+}
+
+function miniaturaActivaBuenosAires(n) {
+    mostrarImagenBuenosAires (indiceImagenesBuenosAires = n);
+}
+
+
+function mostrarImagenBuenosAires (n) {
+    let i;
+    let x = document.getElementsByClassName("galeria-de-imagenes-BuenosAires");
+    if (n > x.length) {indiceImagenesBuenosAires = 1}
+    if (n < 1) {indiceImagenesBuenosAires = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[indiceImagenesBuenosAires-1].style.display = "flex";}
+</script>
+  </body>
+</html>
