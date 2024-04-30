@@ -1,0 +1,166 @@
+/******************/
+/*Formulario Login*/
+/******************/
+
+#formulario_login{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55vh;
+}
+
+#fondo{
+  img{
+    width: auto;
+    height: 100%;
+  }
+  height: 100%;
+  z-index: 0;
+  padding: 1rem;
+}
+
+#form-log{
+  position: absolute;
+  /*bottom: 3rem;*/
+  top: calc(55vh / 2 + 1rem);
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas: 
+  "user form-user"
+  "pass form-pass"
+  "login login";
+  color: var(--color-white) ;
+  column-gap: 0.1rem;
+  row-gap: 0.1rem;
+  font-size: 0.8rem;
+}
+
+#form-log-1 {
+  grid-area: user;
+  justify-self: end;
+  align-self: center;
+}
+
+#form-log-2 {
+  grid-area: form-user;
+  justify-self: start;
+  align-self: center;
+  input{
+    border-color: transparent;
+    border-radius: 4%;
+    background-color: var(--color-naranja-logo-form);
+    color: var(--color-principal-de-fondo);
+    width: 5rem;
+    font-size: 0.7rem;
+    &:hover{
+      background-color: var(--color-naranja-logo-hover);
+    }
+  }
+}
+
+#form-log-3 {
+  grid-area: pass;
+  justify-self: end;
+  align-self: center;
+}
+
+#form-log-4 {
+  grid-area: form-pass;
+  justify-self: start;
+  align-self: center;
+
+  input{
+    border-color: transparent;
+    border-radius: 4%;
+    background-color: var(--color-naranja-logo-form);
+    color: var(--color-principal-de-fondo);
+    width: 5rem;
+    font-size: 0.7rem;
+    &:hover{
+      background-color: var(--color-naranja-logo-hover);
+    }
+  }
+}
+
+#form-log-5 {
+  grid-area: login;
+  justify-self: center;
+  align-self: center;
+  margin-top: 0.5rem;
+  input{
+    background-color: var(--color-naranja-logo);
+    border-color: transparent;
+    border-radius: 4%;
+    color: var(--color-naranja-logo-dark);
+    font-weight: 700;
+    width: 7rem;
+    height: 2rem;
+    &:hover{
+      background-color: var(--color-naranja-logo-hover);
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #formulario_login{
+    height: 80vh;
+  }
+  
+  #form-log{
+    top: calc(80vh / 2 + 5vh);
+    font-size: 1.5rem;
+    column-gap: 0.3rem;
+    row-gap: 0.3rem;
+  }
+
+  #form-log-2, #form-log-4{
+    input{
+      font-size: 1rem;
+      width: 8rem;
+    }
+  }
+  #form-log-5 {
+    margin-top: 1.5rem;
+    input{
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #formulario_login{
+    height: 80vh;
+    width: 100%;
+  }
+  
+  #form-log{
+    top: calc(80vh / 2 + 4vh);
+    height: 25vh;
+    font-size: 1.8rem;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+  }
+  #form-log-2, #form-log-4{
+    input{
+      font-size: 1.3rem;
+      width: 9rem;
+    }
+  }
+  #form-log-5 {
+    margin-top: 2rem;
+    input{
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+}

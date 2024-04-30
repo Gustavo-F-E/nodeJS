@@ -1,0 +1,49 @@
+/******************/
+/*      Logo      */
+/******************/
+
+#logo{
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 1rem;
+  img{
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #logo{
+    position: fixed;
+    top: 0;
+    display: block;
+    padding: 1rem 0rem 0rem 1rem;
+    left: 0;
+    width: 20vw;
+    height: auto;
+    z-index: 999;
+    img{
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: max-content;
+    padding: 1.5rem 0rem 0rem 1.5rem;
+    img{
+      width: auto;
+      height: 15vh;
+    }
+  }
+}

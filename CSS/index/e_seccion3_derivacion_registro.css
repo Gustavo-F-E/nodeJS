@@ -1,0 +1,32 @@
+/*********************/
+/*Derivacion Registro*/
+/*********************/
+
+#derivacion-registro{
+  height: 5vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#link-derivacion-registro{
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #derivacion-registro{
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #derivacion-registro{
+    height: 20vh;
+  }
+}

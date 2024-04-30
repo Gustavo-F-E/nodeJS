@@ -1,0 +1,202 @@
+/*********************/
+/*Formulario Registro*/
+/*********************/
+
+#formulario-registro{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  padding-bottom: 2.5rem;
+}
+
+#fondo-reg{
+  img{
+    width: 65vw;
+    height: auto;
+  }
+  height: 100%;
+  z-index: 0;
+  padding: 1rem;
+  padding-bottom: calc(5vh + 1rem);
+}
+
+#form-reg{
+  position: absolute;
+  /*bottom: 3rem;*/
+  top: calc(55vh / 2);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white) ;
+  form{
+    padding: 0.2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+      border-color: transparent;
+      border-radius: 4%;
+      background-color: var(--color-naranja-logo-form);
+      color: var(--color-principal-de-fondo);
+      width: 5rem;
+      font-size: 0.4rem;
+      text-align: center;
+      padding-left: 0.3rem;
+      &:hover{
+        background-color: var(--color-naranja-logo-hover);
+      }
+    }
+  }
+}
+
+#form-reg-div1{ 
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 0rem;
+  
+}
+
+.form-reg-div{
+  font-size: 0.5rem;
+  font-weight: 400;
+  padding: 0.2rem 0rem;
+  width: 100%;
+}
+
+#submit-form-reg{
+  background-color: var(--color-naranja-logo);
+  border-color: transparent;
+  border-radius: 4%;
+  color: var(--color-naranja-logo-dark);
+  font-weight: 800;
+  width: 4rem;
+  height: 1rem;
+  margin-top: 0.3rem;
+  &:hover{
+    background-color: var(--color-naranja-logo-hover);
+    cursor: pointer;
+  }
+}
+
+#form-reg-2{
+  font-size: 0.5rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+
+#form-reg-3{
+  padding-left: 0.5rem;
+}
+
+.reg-img{
+  height: 1rem;
+  width: auto;
+  padding: 0rem 0.1rem;
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #formulario-registro{
+    height: 80vh;
+  }
+  
+  #form-reg{
+    top: calc(80vh / 2);
+    font-size: 1.5rem;
+  }
+
+  .form-reg-div{
+    font-size: 0.8rem;
+  }
+
+  #form-reg-div1{ 
+    font-size: 0.9rem;
+    
+  }
+
+  #form-reg{
+    form{
+      input{
+        width: 7rem;
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  #submit-form-reg{
+    font-size: 0.8rem;
+    width: 4rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #form-reg-2{
+    font-size: 0.6rem;
+    padding-top: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  #formulario-registro{
+    height: 80vh;
+  }
+
+  #fondo-reg{
+    img{
+      width: auto;
+      height: 80vh;
+    }
+  }
+  
+  #form-reg{
+    top: calc(80vh / 2 + 2rem);
+    font-size: 2rem;
+  }
+
+  .form-reg-div{
+    font-size: 0.9rem;
+  }
+
+  #form-reg-div1{ 
+    font-size: 1.5rem;
+    
+  }
+
+  #form-reg{
+    form{
+      input{
+        width: 7rem;
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  #submit-form-reg{
+    font-size: 0.8rem;
+    width: 4rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  #form-reg-2{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  .reg-img{
+    height: 1.2rem;
+    width: auto;
+    padding: 0rem 0.2rem;
+  }
+  
+
+}

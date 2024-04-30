@@ -1,0 +1,15 @@
+/******************/
+/*      Main      */
+/******************/
+
+
+main{
+  /*position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch;
+  align-items: center;*/
+  width: 100%;
+  position: relative;
+}

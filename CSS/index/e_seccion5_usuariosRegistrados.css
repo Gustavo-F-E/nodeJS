@@ -1,0 +1,77 @@
+#inicio-sesion, #inicio-sesion-new{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 3rem;
+  article{
+    div{
+      color: var(--color-white);
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+#inicio-sesion-new{
+height: 90vh;
+padding: 0vh 0vw 30vh 0vw;
+}
+
+#inicio-sesion article:hover div .img-user-avatar, #inicio-sesion-new article:hover div .img-user-avatar{
+  height: 13rem;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  &:hover{
+    cursor: pointer;
+    background-color: var(--color-principal-de-fondo-hover);
+  }
+
+}
+
+.user-name{
+  padding-bottom: 1rem;
+}
+
+.user-avatar{
+  padding-top: 1.5rem;
+}
+
+.img-user-avatar{
+  height: 10rem;
+  width: auto;
+  padding: 1rem 0.5rem;
+}
+
+#agregar-usuario, #agregar-usuario-new{
+  cursor: pointer;
+  &:hover{
+    font-weight: 700;
+    color: var(--color-link);
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #inicio-sesion{
+    padding: 12vh 15vw 0vw 15vw;
+  }
+  #inicio-sesion-new{
+    padding: 8vh 15vw 0vh 15vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #inicio-sesion {
+    padding: 7vh 15vw 0vw 15vw;
+  }
+  #inicio-sesion-new{
+    padding: 10vh 15vw 0vh 15vw;
+  }
+}

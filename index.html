@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veo veo</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/destinos.css">
-    <link rel="icon" type="image/x-icon" href="ASSETS/favicon/cine.svg">
+    <link rel="stylesheet" href="CSS/index/styles.css">
+    <!--link rel="stylesheet" href="CSS/index/estilos.css"-->
+    <link rel="icon" type="image/x-icon" href="ASSETS/favicon/clapperboard 1.png">
     <!--Metaetiquetas-->
     <!--link rel="canonical" href="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
         <!--colocar direccion real cuando se haga el despliegue---->
@@ -26,121 +26,146 @@
   </head>
   <body>
     <header>
-      <section data-dark>
-        <h1>Veo veo</h1>
-      </section>
+        <h1 id="home">Veo veo</h1>
     </header>
-    <button class="panel-btn hamburger hamburger--spin" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <button class="scroll-top-btn hidden">&#11014</button>
-    <!--https://emojipedia.org/ -->
-    <button class="dark-theme-btn">🌛</button>
-    <aside class="panel">
-      <nav class="menu">
-        <ul>
-          <li><a href="#top-ten">Top 10 Argentina</a></li>
-          <li><a href="#accion">Acción</a></li> 
-          <li><a href="#romanticas">Romanticas</a></li> 
-          <li><a href="#terror">Terror</a></li> 
+    <main>
+      <section id="logo"><img src="ASSETS/images/logo_veo_veo.png" alt="logo veo veo"></section>
+      <!--*****************************-->
+      <!--section  "loading  "-->
+      <!--*****************************-->
+      <section id="loading">Cargando <span id="cargando1">.</span><span id="cargando2">.</span><span id="cargando3">.</span></section>
+      <!--*****************************-->
+      <!--       section "log in      "-->
+      <!--*****************************-->
+      <section id="formulario_login" class="noDisplay" >
+        <article id="fondo"><img src="ASSETS/svg/clapperboard.svg" alt="clappeboard"></article>
+        <article id="form-log" >
+          <div id="form-log-1">Usuario:</div>
+          <div id="form-log-2"><input type="text" placeholder="Usuario"></div>
+          <div id="form-log-3">Contraseña:</div>
+          <div id="form-log-4"><input type="text" placeholder="Contraseña"></div>
+          <div id="form-log-5"><input id="boton_iniciar_sesion" type="button" value="Iniciar Seción"></div>
+        </article>
+      </section>
+      <section id="derivacion-registro" class="noDisplay" ><p>¿Todavía no se ha registrado? Haga click <span id="link-derivacion-registro">aquí</span>.</p> </section>
+      <!--*****************************-->
+      <!--section "formulario-registro"-->
+      <!--*****************************-->
+      <section id="formulario-registro" class="noDisplay">
+        <article id="fondo-reg"><img src="ASSETS/svg/clapperboard.svg" alt="clappeboard"></article>
+        <article id="form-reg">
+          <div id="form-reg-div1">Formulario de Registro:</div>
+          <form action="">
+            <div class="form-reg-div"><label id="nameLastname_label" for="nameLastname">Ingrese su nombre y apellido:</label>
+              <input type="text" placeholder="Nombre y apellido" name="nameLastname" id="nameLastname">
+            </div>
+            <div class="form-reg-div"><label id="password_label" for="password">Ingrese una Contraseña:</label>
+              <input type="password" name="password"  id="password" minlength="8"  placeholder="********"><br>
+            </div>
+            <div class="form-reg-div">
+              <label id="password2_label" for="password2">Re-ingrese la Contraseña:</label>
+              <input type="password" name="password2"  id="password2" minlength="8" placeholder="********"><br>
+            </div>
+            <input id="submit-form-reg" type="submit">
+          </form>
+          <div id="form-reg-2">O regístrese con: 
+            <span id="form-reg-3">
+            <span><a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer"><img src="ASSETS/svg/google.svg" alt="google" class="reg-img"></a></span>
+            <span><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="ASSETS/svg/facebook.svg" alt="facebook" class="reg-img"></a> </span>
+            <span><a href="https://www.icloud.com/" target="_blank" rel="noopener noreferrer"><img src="ASSETS/svg/apple-old.svg" alt="apple" class="reg-img"></a> </span>
+            <span><a href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=69893ee3-dd10-4b1c-832d-4870354be3d8&redirect_uri=https%3A%2F%2Fwww.microsoft.com%2Frpsauth%2Fv2%2Faccount%2Faad%2Fsignincallback&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3DjSRaJMI4Oyx_M7i1DDhSNdryt3iRq927pHyiFI06iMiCb32_yh0-6NeS_rr_luWq-wgLCuOapoV62iaxYUNquWjIaRvzQtAsvV82FBfArf-ThgrBaBtSyYZ4vgPARezw8ZXdxNSA0bkg5bkZQUyW2TOXcXPmKeORhSqX0GYbonKu4_UyX1ta1V05bm02NrOCWx8II-F1uyNXt8u2G3psH7mm8PY7SF48g-c-FFrOn-oHU0DekDTOh7WYOVr0T0Ar40A7Np9UGAQ2rHtfHIaVH4kDh08tuoAGhMF931mGqmaKRFkyl_8IXviWNPNdmYZZTe8IBAF17nOxkJO9NC52jwuiaSmVOP_vJX1g1xT48vbsue1VFOE9gfK61EQl-13ZLPp4njpCcBSPS__S9E1Ky3mzhEpT6MqvXmr2rR-QSdZvfmrU9XoC_cSfrCB_5R5nl0VrMEWsxc2W207XwuTGHhQ96r2NmOLLLfZpetmvGHxKVXc4wcYcnPbkyqj4aHtsm7lNpbpgFvAOUtTLP6gdJw&response_mode=form_post&nonce=638500111634065786.NmFjZDAxOTctMjk3My00ZDYzLTlmZDAtOTgzMTJmOWY4ZGExODJkYTA5NGItNGVjNC00ZjA2LWFmOWYtMjQ4YmYzYmIzOWIx&msaredir=1&lc=11274&x-client-SKU=ID_NET461&x-client-ver=5.5.0.0&sso_reload=true" target="_blank" rel="noopener noreferrer"><img src="ASSETS/svg/windows.svg" alt="microsoft" class="reg-img"></a></span>
+          </span></div>
+        </article>
+      </section>
+      <!--*****************************-->
+      <!--section    "inicio-sesion    "-->
+      <!--*****************************-->
+      <section id="inicio-sesion" class="noDisplay">
+        <article id="avatar1" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/user_blue.svg" alt="usuario-azul" class="img-user-avatar"></div>
+            <div class="user-name">Usuario 1</div>
+          </a>
+        </article>
+        <article id="avatar2" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/user_pink.svg" alt="usuario-rosa" class="img-user-avatar"></div>
+            <div class="user-name">Usuario 2</div>
+          </a>
+        </article>
+        <article id="avatar3" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/user_green.svg" alt="usuario-verde" class="img-user-avatar"></div>
+            <div class="user-name">Usuario 3</div>
+          </a>
+        </article>
+        <article id="avatar4" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/user_orange.svg" alt="usuario-naranja" class="img-user-avatar"></div>
+            <div class="user-name">Usuario 4</div>
+          </a>
+        </article>
+        <article id="avatar5" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/user_violet.svg" alt="usuario-violeta" class="img-user-avatar"></div>
+            <div class="user-name">Usuario 5</div>
+          </a>
+        </article>
+        <article id="avatar6" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/agregar_usuario.svg" alt="usuario-nuevo" class="img-user-avatar"></div>
+            <div id="agregar-usuario" class="user-name">Agregar usuario</div>
+          </a>
+        </article>
+      </section>
+      <!--*****************************-->
+      <!--section  "felicitaciones  "-->
+      <!--*****************************-->
+      <section id="felicitaciones" class="noDisplay">
+        <article id="fondo-felicitaciones"><img src="ASSETS/svg/clapperboard.svg" alt="clappeboard"></article>
+        <article>
+          <div id="fel-1">¡¡¡Felicitaciones <span>Usuario</span>!!!</div>
+          <div id="fel-2">Se envió un correo de verificación a su casilla.</div>
+          <div id="fel-3">Para validar su cuenta tiene un período de 24 hs.</div>
+        </article>
+      </section>
+      <!--*****************************-->
+      <!--section  "inicio-sesion-new  "-->
+      <!--*****************************-->
+      <section id="inicio-sesion-new" class="noDisplay">
+        <article id="avatar1-new" class="avatar">
+          <a href="pages/peliculas.html">
+            <div class="user-avatar"><img src="ASSETS/svg/user_blue.svg" alt="usuario-azul" class="img-user-avatar"></div>
+            <div class="user-name">Usuario 1</div>
+          </a>
+        </article>
+        <article id="avatar-new" class="avatar">
+          <div class="user-avatar"><img src="ASSETS/svg/agregar_usuario.svg" alt="usuario-nuevo" class="img-user-avatar"></div>
+          <div id="agregar-usuario-new" class="user-name">Agregar usuario</div>
+        </article>
+      </section>
+    </main>
+    <aside>
+        <nav>
+        <ul id="menu">
+          <li><a href="#home" title="home"><img class="svg_menu" src="ASSETS/svg/home.svg" alt="home"></a></li>
+          <li><a href="pages/peliculas.html" title="Películas"><img class="svg_menu" src="ASSETS/svg/peliculas.svg" alt="Peliculas"></a></li>
+          <li><a href="pages/series.html" title="Series de TV"><img class="svg_menu" src="ASSETS/svg/series-TV.svg" alt="Series de TV"></a></li>
+          <li><a href="pages/contacto.html" title="Contacto"><img class="svg_menu" src="ASSETS/svg/contacto_preguntas.svg" alt="Contacto, consultas"></a></li>
+          <li><a href="pages/grupo_24.html" title="Grupo 24"><img class="svg_menu" src="ASSETS/svg/grupo_24.svg" alt="Grupo 24"></a></li>
         </ul>
       </nav>
     </aside>
-    <main >
-      <section id="top-ten" class="section" data-dark>
-        <h2>Top 10 Argentina</h2>
-        <!------------Buenos aires----------->
-        <div class="centrador reverse">
-          <div id="buenos-aires" class="contenedor-buenos-aires">
-              <div class="galeria-de-imagenes-BuenosAires">
-                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">El Obelisco</h3>
-                  <img  src="ASSETS/Imagenes/Buenos-Aires/obelisco.jpg">
-              </div>
-              <div class="galeria-de-imagenes-BuenosAires">
-                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;" >Caminito</h3>
-                  <img src="ASSETS/Imagenes/Buenos-Aires/barrio-boca.jpg">
-              </div>
-              <div class="galeria-de-imagenes-BuenosAires">
-                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">Teatro El Ateneo</h3>
-                  <img src="ASSETS/Imagenes/Buenos-Aires/planetario.jpg">
-              </div>
-              <div class="galeria-de-imagenes-BuenosAires">
-                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">Los Bosques de Palermo</h3>
-                  <img  src="ASSETS/Imagenes/Buenos-Aires/jardin-japones2.jpg">
-              </div>
-              <div class="galeria-de-imagenes-BuenosAires">
-                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">Caballito</h3>
-                  <img  src="ASSETS/Imagenes/Buenos-Aires/floralis.jpg">
-              </div>
-              <div class="galeria-de-imagenes-BuenosAires">
-                  <h3 class="subtitulo-galeria-de-imagenes" style="color: black;">El Planetario</h3>
-                  <img  src="ASSETS/Imagenes/Buenos-Aires/ciudad.jpg">
-              </div>
-              <button class="boton izquierdo" onclick="cambiarImagenBuenosAires(-1)" style="color: yellow;">&#10094;</button>
-              <button class="boton derecho" onclick="cambiarImagenBuenosAires(1)" style="color: yellow;">&#10095;</button>
-              <div class="contenedor-miniaturas">
-                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(1)" src="ASSETS/Imagenes/Buenos-Aires/obelisco.jpg">
-                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(2)" src="ASSETS/Imagenes/Buenos-Aires/barrio-boca.jpg">
-                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(3)" src="ASSETS/Imagenes/Buenos-Aires/planetario.jpg">
-                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(4)"src="ASSETS/Imagenes/Buenos-Aires/jardin-japones2.jpg">
-                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(5)" src="ASSETS/Imagenes/Buenos-Aires/floralis.jpg">
-                <img class="imagenes-miniaturas" onclick="miniaturaActivaBuenosAires(6)"src="ASSETS/Imagenes/Buenos-Aires/ciudad.jpg">
-            </div>
-          </div>
-          <div class="textos">
-            <h2 class="titulo-galeria-de-imagenes" style="color: black;">Buenos Aires</h2>
-            <p style="color: black;">Es el destino más visitado de la Argentina por ser su capital y es el puente a otros destinos de este hermoso país. “Descubriendo Argentina” te invita a conocer su cultura, sus barrios, sus monumentos, su arquitectura y su adrenalina típica de una gran ciudad te invita a recorrerla en cualquier época del año</p>
-            <button class="boton-link" style="background-color: yellow;"><a target="_blank" href="https://turismo.buenosaires.gob.ar/es" style="color: black;">Para saber mas click aqui</a></button>
-          </div>
-      </div>
-<br>
-      </section>
-      <section id="accion" class="section" data-dark>
-        <h2>Acción/h2>
-      </section>
-      <section id="romanticas" class="section" data-dark>
-        <h2>Romanticas</h2>
-      </section>
-      <section id="terror" class="section" data-dark>
-        <h2>Terror</h2>
-      </section>
-    </main>
     <footer>
-      <h2>Grupo 24</h2>
-      <ul>
-        <li>Sara Nuñez</li>
-        <li>Benítez Daniel</li>
-        <li>Eichhorn Gustavo</li>
-        <li>Edgardo Padovan</li>
-      </ul>
+      <div>Hecho por <a id="g24" href="pages/grupo_24.html" target="_blank" rel="noopener noreferrer"> Grupo 24</a>. Todos los derechos Resevados</div>
+      <div>
+        <img class="img-footer" src="ASSETS/images/Buenos_Aires_Ciudad2.png" alt="">
+        <img class="img-footer" src="ASSETS/images/Agencia_de_aprendizaje.png" alt="">
+        <img class="img-footer" src="ASSETS/images/logo_codo_a_codo.png" alt="">
+        <img class="img-footer" src="ASSETS/svg/nodejs.svg" alt="">
+        <img class="img-footer" src="ASSETS/svg/javascript.svg" alt="">
+      </div>
     </footer>
-
-
 <script src="JS/indexJS.js" type="module"></script>
-<script>
-  let indiceImagenesBuenosAires = 1;
-mostrarImagenBuenosAires(indiceImagenesBuenosAires);
-
-function cambiarImagenBuenosAires(n) {
-    mostrarImagenBuenosAires (indiceImagenesBuenosAires += n);
-}
-
-function miniaturaActivaBuenosAires(n) {
-    mostrarImagenBuenosAires (indiceImagenesBuenosAires = n);
-}
-
-
-function mostrarImagenBuenosAires (n) {
-    let i;
-    let x = document.getElementsByClassName("galeria-de-imagenes-BuenosAires");
-    if (n > x.length) {indiceImagenesBuenosAires = 1}
-    if (n < 1) {indiceImagenesBuenosAires = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[indiceImagenesBuenosAires-1].style.display = "flex";}
-</script>
   </body>
 </html>
