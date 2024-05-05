@@ -1,0 +1,48 @@
+.card{
+    width: 300px !important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px !important;
+    display: inline-block;
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .container{
+        display: flex !important;
+        margin-right: 15% !important;
+        
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container{
+        display: flex !important;
+        margin-left: 10% !important;
+        margin-right: 2%;
+    }
+}
+
+
+.card img{
+    width: 100%!important;
+    height: auto;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.card-content h3{
+    margin-top: 0;
+}
+
+.menu{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    text-align: left;
+    padding: 2rem;
+    min-height: 100vh;
+  }

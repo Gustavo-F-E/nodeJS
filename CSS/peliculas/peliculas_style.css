@@ -1,0 +1,47 @@
+/* Estilos generales */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body {
+    min-height: 120px;
+    min-width: 400px;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: top; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+main {
+    min-height: 100px;
+}
+
+/* Regla para la imagen de fondo */
+ body {
+   
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+ */
+
+
+/* Estilos para las tarjetas */
+.card {
+    /* Otras propiedades de estilo para la tarjeta */
+    transition: transform 0.3s ease; /* Agregamos una transición suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Escalamos la tarjeta en un 5% al hacer hover */
+}
+
+.titulo {
+    color: white !important;
+    text-align: center !important;
+}
