@@ -5,7 +5,7 @@
 * @site https://jonsuh.com/hamburgers
 * @link https://github.com/jonsuh/hamburgers
 */
-
+/*
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -68,10 +68,11 @@
 .hamburger-inner::after {
   bottom: -10px;
 }
-
+*/
 /*
 * Spin
 */
+/*
 .hamburger--spin .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -101,3 +102,123 @@
     transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+*/
+
+aside{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 10;
+  width: max-content;
+}
+
+aside nav{
+  height: 100%;
+  width: max-content;
+}
+
+aside nav ul{
+  height: 100%;
+  width: max-content;
+}
+
+#menu{
+  position: fixed;
+  bottom: 0rem;
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  li{
+    width: calc(100vw / 5);
+    height: 100%;
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    &:hover{
+      background-color: var(--color-principal-de-fondo-hover);
+    }
+    &:active{
+      background-color: var(--color-principal-de-fondo-hover);
+    }
+  }
+}
+
+.svg_menu{
+  width: auto;
+  height: 2rem;
+  padding: 0.1rem 0rem;
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  #menu{
+    height: 80vh;
+    width: 8vw;
+    right: 0;
+    top:calc(100vw / 10 + 0.5rem);
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+      height: calc(100vh / 8);
+      width: calc(100vw / 5);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a{
+        padding: 0 1rem 0 0;
+        height: 100%;
+      }
+    }
+  }
+
+  .svg_menu{
+    width: 8vw;
+    height: auto;
+    padding: 0.1rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  aside nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul{
+      height: 100%;
+    }
+  }
+  #menu{
+    height: 100%;
+    max-height: 800px;
+    width: 8vw;
+    left: 0;
+    padding-top: 5rem;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    li{
+      height: auto;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a{
+        padding: 0.5rem;
+        height: 100%;
+        img{
+          height: 8vh;
+          width: auto;
+        }
+      }
+    }
+  }
+}

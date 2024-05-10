@@ -1,73 +1,265 @@
-<h1>Películas</h1>
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Veo veo</title>
-    <link rel="stylesheet" href="../CSS/peliculas/peliculas_style.css">
-    <link rel="stylesheet" href="../CSS/index/styles.css">
-    <link rel="stylesheet" href="../CSS/peliculas/card.css">
-    <link rel="icon" type="./image/x-icon" href="../ASSETS/favicon/clapperboard 1.png">
-</head>
+    <link rel="stylesheet" href="../CSS/peliculas/styles.css">
+    <!--link rel="stylesheet" href="CSS/index/estilos.css"-->
+    <link rel="icon" type="image/x-icon" href="ASSETS/favicon/clapperboard 1.png">
+    <!--Metaetiquetas-->
+    <!--link rel="canonical" href="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
+        <!--colocar direccion real cuando se haga el despliegue---->
+        <!--meta property="og:title" content="Veterinaria AssistVet" /-->
+        <!--meta
+            property="og:description"
+            content="Veterinaria AssistVet: Todo para tu mascota. Alimentos balanceados, atención médica, servicios de peluquería y mucho, mucho más!!!"
+        /-->
+        <!--meta
+            property="og:image"
+            content="assets/images/head/logoasistvet-png.png"
+        /-->
+        <!--meta property="og:image:width" content="1200"-->
+        <!--meta property="og:image:height" content="630"-->
+        <!--meta property="og:url" content="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
+        <style>
 
-<body>
+        </style>
+  </head>
+  <body>
     <header>
-        <h1>Las 10 mejores peliculas Argentina</h1>
+        <h1 id="home" class="noDisplay">Veo veo</h1>
     </header>
-    <main>
-        <section>
-            <img src="../ASSETS/Imagenes/Buenos-Aires/ciudad.jpg" alt="Ciudad">
-        </section>
-        <section id="banner" class="titulo">
-            <div>
-                <h2>Las 10 mejores peliculas de Argentina<br><br></h2>
-            </div>
-        </section>
-        <section id="logo"><img src="../ASSETS/images/logo_veo_veo.png" alt="logo veo veo"></section>  
-        <nav>
-            <ul>
-                <li>
-                <div class="container" id="container">
+    <main id="main-peliculas" style="grid-auto-rows: repeat(2, 40vh);">
+      <section id="logo"><img src="../ASSETS/images/logo_veo_veo.png" alt="logo veo veo"></section>
+      <!--*****************************-->
+      <!--section  "loading  "-->
+      <!--*****************************-->
+      <section id="loading" class="noDisplay">Cargando <span id="cargando1">.</span><span id="cargando2">.</span><span id="cargando3">.</span></section>
+      <!--*****************************-->
+      <!--       section "películas"-->
+      <!--*****************************-->
+      <section id="background-video" class="noDisplay">
+        <div>
+          <iframe src="https://www.youtube.com/embed/SOW5EfrTTsE?si=Y2j0CV6Xy9uwm_s_&controls=1&iv_load_policy=3&loop=1&wmode=transparent&rel=0" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section id="background-image" class="noDisplay">
+        <article><img src="../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg" alt="El secreto de sus ojos"></article>
+        <article> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae? </article>
+        <article class="ver-pelicula">
+        Ver pelicula
+        </article>
+      </section>
+      <section id="banner" class="noDisplay">
+          <article>
+              <h2>Las 10 mejores peliculas de Argentina</h2>
+          </article>
+          <article id="banner-article">
+            <div class="container" id="container">
+              <!--div class="card">
+                <div class="card-content">
+                  <img src="../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg" alt="El secreto de sus ojos">
+                  <a href="https://www.youtube.com/watch?v=SOW5EfrTTsE&amp;ab_channel=cinenacional" target="_blank">
+                    </a>
                 </div>
-                </li>
-            </ul>
-        </nav>
-        <section id="recientes" class="titulo">
-            <div>
-                <h2><br>Las más recientes<br></h2>
+              </div>
+              <div class="card">
+                <div class="card-content"><a href="https://www.youtube.com/watch?v=d0eDO3lusC0&amp;ab_channel=decine21"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg"
+                      alt="Un Lugar en el mundo"></a></div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a
+                    href="https://www.youtube.com/watch?v=I42JYVjQkPI&amp;ab_channel=StarDistributionLatinoam%C3%A9rica"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/9reinas.jpg" alt="Nueve reinas"></a></div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a href="https://www.youtube.com/watch?v=BibM13-Jd8E&amp;ab_channel=Lukanela"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/La_historia_oficial-.jpg"
+                      alt="La historia oficial"></a></div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a
+                    href="https://www.youtube.com/watch?v=AoAU_eeSq4o&amp;ab_channel=RescateAudiovisualArgentino"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg"
+                      alt="El hijo de la novia"></a></div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a
+                    href="https://www.youtube.com/watch?v=CzJM3jYKjAg&amp;ab_channel=WarnerBros.PicturesEspa%C3%B1a"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/relatos_salvajes.jpg" alt="Relatos salvajes"></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a href="https://www.youtube.com/watch?v=xXQJbhcsAyI&amp;ab_channel=cameo"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/Lugares_comunes.jpg" alt="Lugares comunes"></a></div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a href="https://www.youtube.com/watch?v=f6fIawRcRxs&amp;ab_channel=OdeonVOD"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg" alt="Tiempo de revancha"></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content"><a
+                    href="https://www.youtube.com/watch?v=gltR19O0q1Q&amp;ab_channel=ElencoestableGurruchaga"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg" alt="Rosaura a las diez"></a>
+                </div>
+              </div>
+              <div-- class="card">
+                <div class="card-content"><a href="https://www.youtube.com/watch?v=cUQIHRV3Vlc&amp;ab_channel=645JorgeVar"
+                    target="_blank"><img src="../ASSETS/images/Peliculas/martin_hache.jpg" alt="Martin (Hache)"></a></div>
+              </div-->
             </div>
-        </section>
+          </article>
+      </section>
+      <section class="new-banner" class="noDisplay" style="grid-row: 5;">
+        <article>
+            <h2>Las 20 mejores peliculas de Argentina</h2>
+        </article>
+        <article>
+          <div class="container" id="container">
+            <div class="card">
+              <div class="card-content">
+                <a href="https://www.youtube.com/watch?v=SOW5EfrTTsE&amp;ab_channel=cinenacional" target="_blank">
+                  <img src="../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg" alt="El secreto de sus ojos"></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a href="https://www.youtube.com/watch?v=d0eDO3lusC0&amp;ab_channel=decine21"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg"
+                    alt="Un Lugar en el mundo"></a></div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a
+                  href="https://www.youtube.com/watch?v=I42JYVjQkPI&amp;ab_channel=StarDistributionLatinoam%C3%A9rica"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/9reinas.jpg" alt="Nueve reinas"></a></div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a href="https://www.youtube.com/watch?v=BibM13-Jd8E&amp;ab_channel=Lukanela"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/La_historia_oficial-.jpg"
+                    alt="La historia oficial"></a></div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a
+                  href="https://www.youtube.com/watch?v=AoAU_eeSq4o&amp;ab_channel=RescateAudiovisualArgentino"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg"
+                    alt="El hijo de la novia"></a></div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a
+                  href="https://www.youtube.com/watch?v=CzJM3jYKjAg&amp;ab_channel=WarnerBros.PicturesEspa%C3%B1a"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/relatos_salvajes.jpg" alt="Relatos salvajes"></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a href="https://www.youtube.com/watch?v=xXQJbhcsAyI&amp;ab_channel=cameo"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/Lugares_comunes.jpg" alt="Lugares comunes"></a></div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a href="https://www.youtube.com/watch?v=f6fIawRcRxs&amp;ab_channel=OdeonVOD"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg" alt="Tiempo de revancha"></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a
+                  href="https://www.youtube.com/watch?v=gltR19O0q1Q&amp;ab_channel=ElencoestableGurruchaga"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg" alt="Rosaura a las diez"></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content"><a href="https://www.youtube.com/watch?v=cUQIHRV3Vlc&amp;ab_channel=645JorgeVar"
+                  target="_blank"><img src="../ASSETS/images/Peliculas/martin_hache.jpg" alt="Martin (Hache)"></a></div>
+            </div>
+          </div>
+        </article>
+    </section>
+    <section class="new-banner" style="grid-row: 6;">
+      <article>
+          <h2>Las 30 mejores peliculas de Argentina</h2>
+      </article>
+      <article>
+        <div class="container" id="container">
+          <div class="card">
+            <div class="card-content">
+              <a href="https://www.youtube.com/watch?v=SOW5EfrTTsE&amp;ab_channel=cinenacional" target="_blank">
+                <img src="../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg" alt="El secreto de sus ojos"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a href="https://www.youtube.com/watch?v=d0eDO3lusC0&amp;ab_channel=decine21"
+                target="_blank"><img src="../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg"
+                  alt="Un Lugar en el mundo"></a></div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a
+                href="https://www.youtube.com/watch?v=I42JYVjQkPI&amp;ab_channel=StarDistributionLatinoam%C3%A9rica"
+                target="_blank"><img src="../ASSETS/images/Peliculas/9reinas.jpg" alt="Nueve reinas"></a></div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a href="https://www.youtube.com/watch?v=BibM13-Jd8E&amp;ab_channel=Lukanela"
+                target="_blank"><img src="../ASSETS/images/Peliculas/La_historia_oficial-.jpg"
+                  alt="La historia oficial"></a></div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a
+                href="https://www.youtube.com/watch?v=AoAU_eeSq4o&amp;ab_channel=RescateAudiovisualArgentino"
+                target="_blank"><img src="../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg"
+                  alt="El hijo de la novia"></a></div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a
+                href="https://www.youtube.com/watch?v=CzJM3jYKjAg&amp;ab_channel=WarnerBros.PicturesEspa%C3%B1a"
+                target="_blank"><img src="../ASSETS/images/Peliculas/relatos_salvajes.jpg" alt="Relatos salvajes"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a href="https://www.youtube.com/watch?v=xXQJbhcsAyI&amp;ab_channel=cameo"
+                target="_blank"><img src="../ASSETS/images/Peliculas/Lugares_comunes.jpg" alt="Lugares comunes"></a></div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a href="https://www.youtube.com/watch?v=f6fIawRcRxs&amp;ab_channel=OdeonVOD"
+                target="_blank"><img src="../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg" alt="Tiempo de revancha"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a
+                href="https://www.youtube.com/watch?v=gltR19O0q1Q&amp;ab_channel=ElencoestableGurruchaga"
+                target="_blank"><img src="../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg" alt="Rosaura a las diez"></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content"><a href="https://www.youtube.com/watch?v=cUQIHRV3Vlc&amp;ab_channel=645JorgeVar"
+                target="_blank"><img src="../ASSETS/images/Peliculas/martin_hache.jpg" alt="Martin (Hache)"></a></div>
+          </div>
+        </div>
+      </article>
+  </section>
+            
     </main>
     <aside>
         <nav>
-            <ul id="menu">
-                <li><a href="../#home" title="home"><img class="svg_menu" src="../ASSETS/svg/home.svg" alt="home"></a>
-                </li>
-                <li><a href="../pages/peliculas.html" title="Películas"><img class="svg_menu"
-                            src="../ASSETS/svg/peliculas.svg" alt="Peliculas"></a></li>
-                <li><a href="../pages/series.html" title="Series de TV"><img class="svg_menu"
-                            src="../ASSETS/svg/series-TV.svg" alt="Series de TV"></a></li>
-                <li><a href="../pages/contacto.html" title="Contacto"><img class="svg_menu"
-                            src="../ASSETS/svg/contacto_preguntas.svg" alt="Contacto, consultas"></a></li>
-                <li><a href="../pages/grupo_24.html" title="Grupo 24"><img class="svg_menu"
-                            src="../ASSETS/svg/grupo_24.svg" alt="Grupo 24"></a></li>
-            </ul>
-        </nav>
+        <ul id="menu">
+          <li><a href="../index.html" title="home"><img class="svg_menu" src="../ASSETS/svg/home.svg" alt="home"></a></li>
+          <li><a href="../pages/peliculas.html" title="Películas"><img class="svg_menu" src="../ASSETS/svg/peliculas.svg" alt="Peliculas"></a></li>
+          <li><a href="../pages/series.html" title="Series de TV"><img class="svg_menu" src="../ASSETS/svg/series-TV.svg" alt="Series de TV"></a></li>
+          <li><a href="../pages/contacto.html" title="Contacto"><img class="svg_menu" src="../ASSETS/svg/contacto_preguntas.svg" alt="Contacto, consultas"></a></li>
+          <li><a href="../pages/grupo_24.html" title="Grupo 24"><img class="svg_menu" src="../ASSETS/svg/grupo_24.svg" alt="Grupo 24"></a></li>
+        </ul>
+      </nav>
     </aside>
-
     <footer>
-        <div>Hecho por <a id="g24" href="../pages/grupo_24.html" target="_blank" rel="noopener noreferrer"> Grupo
-                24</a>. Todos los derechos Resevados</div>
-        <div>
-            <img class="img-footer" src="../ASSETS/images/Buenos_Aires_Ciudad2.png" alt="">
-            <img class="img-footer" src="../ASSETS/images/Agencia_de_aprendizaje.png" alt="">
-            <img class="img-footer" src="../ASSETS/images/logo_codo_a_codo.png" alt="">
-            <img class="img-footer" src="../ASSETS/svg/nodejs.svg" alt="">
-            <img class="img-footer" src="../ASSETS/svg/javascript.svg" alt="">
-        </div>
+      <div>Hecho por <a id="g24" href="../pages/grupo_24.html" target="_blank" rel="noopener noreferrer"> Grupo 24</a>. Todos los derechos Resevados</div>
+      <div>
+        <img class="img-footer" src="../ASSETS/images/Buenos_Aires_Ciudad2.png" alt="Buenos_Aires_Ciudad">
+        <img class="img-footer" src="../ASSETS/images/Agencia_de_aprendizaje.png" alt="Agencia_de_aprendizaje">
+        <img class="img-footer" src="../ASSETS/images/logo_codo_a_codo.png" alt="logo_codo_a_codo">
+        <img class="img-footer" src="../ASSETS/svg/nodejs.svg" alt="logo_node_JS">
+        <img class="img-footer" src="../ASSETS/svg/javascript.svg" alt="logo_javascript">
+      </div>
     </footer>
-    <script src="../JS/peliculas.js"></script>
-</body>
+<script src="../JS/peliculasJS.js" type="module"></script>
+  </body>
 </html>

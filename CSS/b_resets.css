@@ -1,5 +1,6 @@
+/**************************/
 /*Normalizaciones y resets*/
-
+/**************************/
 *,
 *::after,
 *::before {
@@ -17,6 +18,7 @@ html {
 
 body {
   width: 100vw;
+  background-color: var(--color-principal-de-fondo);
   /*overflow: hidden;*/
 }
 
@@ -27,8 +29,14 @@ img{
 
 a {
   text-decoration: none;
-}
+  }
+
 
 ul {
   list-style: none;
+}
+
+h1{
+  color:var(--color-principal-de-fondo);
+  font-size: 0rem;
 }
