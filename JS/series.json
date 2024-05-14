@@ -1,0 +1,290 @@
+{
+  "diez_mejores": [
+    {
+      "id": 1,
+    "image": "../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg",
+    "titulo": "El secreto de sus ojos",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link":  "https://www.youtube.com/embed/SOW5EfrTTsE?si=wrdA9mIdkde97cwU"
+  },
+  {
+    "id": 2,
+    "image": "../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg",
+    "titulo": "Un Lugar en el mundo",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/d0eDO3lusC0?si=ruiqVeJBrJ9KNzxJ"
+  },
+  {
+    "id": 3,
+    "image": "../ASSETS/images/Peliculas/9reinas.jpg",
+    "titulo": "Nueve reinas",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/I42JYVjQkPI?si=5MNCPEHZUCMffPaU"
+  },
+  {
+    "id": 4,
+    "image": "../ASSETS/images/Peliculas/La_historia_oficial-.jpg",
+    "titulo": "La historia oficial",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/BibM13-Jd8E?si=7FR9ie_V6RIKmkKd"
+  },
+  {
+    "id": 5,
+    "image": "../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg",
+    "titulo": "El hijo de la novia",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/AoAU_eeSq4o?si=DUPzfV_MMAhffj1q"
+  },
+  {
+    "id": 6,
+    "image": "../ASSETS/images/Peliculas/relatos_salvajes.jpg",
+    "titulo": "Relatos salvajes",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/CzJM3jYKjAg?si=MRJG69x5FQq0mzzW"
+  },
+  {
+    "id": 7,
+    "image": "../ASSETS/images/Peliculas/Lugares_comunes.jpg",
+    "titulo": "Lugares comunes",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/xXQJbhcsAyI?si=HF_EUa12VdvhrUn8"
+  },
+  {
+    "id": 8,
+    "image": "../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg",
+    "titulo": "Tiempo de revancha",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/f6fIawRcRxs?si=3mjJZyVq2lUWeej_"
+  },
+  {
+    "id": 9,
+    "image": "../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg",
+    "titulo": "Rosaura a las diez",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/gltR19O0q1Q?si=AHpUTW1lpOJ5bhwk"
+  },
+  {
+    "id": 10,
+    "image": "../ASSETS/images/Peliculas/martin_hache.jpg",
+    "titulo": "Martin (Hache)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+    "link": "https://www.youtube.com/embed/cUQIHRV3Vlc?si=UZ_AHoa7C5yX1758"
+  }
+],
+    "accion": [
+      {
+        "id": 1,
+      "image": "../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg",
+      "titulo": "El secreto de sus ojos",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link":  "https://www.youtube.com/embed/SOW5EfrTTsE?si=wrdA9mIdkde97cwU"
+    },
+    {
+      "id": 2,
+      "image": "../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg",
+      "titulo": "Un Lugar en el mundo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/d0eDO3lusC0?si=ruiqVeJBrJ9KNzxJ"
+    },
+    {
+      "id": 3,
+      "image": "../ASSETS/images/Peliculas/9reinas.jpg",
+      "titulo": "Nueve reinas",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/I42JYVjQkPI?si=5MNCPEHZUCMffPaU"
+    },
+    {
+      "id": 4,
+      "image": "../ASSETS/images/Peliculas/La_historia_oficial-.jpg",
+      "titulo": "La historia oficial",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/BibM13-Jd8E?si=7FR9ie_V6RIKmkKd"
+    },
+    {
+      "id": 5,
+      "image": "../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg",
+      "titulo": "El hijo de la novia",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/AoAU_eeSq4o?si=DUPzfV_MMAhffj1q"
+    },
+    {
+      "id": 6,
+      "image": "../ASSETS/images/Peliculas/relatos_salvajes.jpg",
+      "titulo": "Relatos salvajes",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/CzJM3jYKjAg?si=MRJG69x5FQq0mzzW"
+    },
+    {
+      "id": 7,
+      "image": "../ASSETS/images/Peliculas/Lugares_comunes.jpg",
+      "titulo": "Lugares comunes",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/xXQJbhcsAyI?si=HF_EUa12VdvhrUn8"
+    },
+    {
+      "id": 8,
+      "image": "../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg",
+      "titulo": "Tiempo de revancha",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/f6fIawRcRxs?si=3mjJZyVq2lUWeej_"
+    },
+    {
+      "id": 9,
+      "image": "../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg",
+      "titulo": "Rosaura a las diez",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/gltR19O0q1Q?si=AHpUTW1lpOJ5bhwk"
+    },
+    {
+      "id": 10,
+      "image": "../ASSETS/images/Peliculas/martin_hache.jpg",
+      "titulo": "Martin (Hache)",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/cUQIHRV3Vlc?si=UZ_AHoa7C5yX1758"
+    }
+  ],
+    "comedia": [
+      {
+        "id": 1,
+      "image": "../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg",
+      "titulo": "El secreto de sus ojos",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link":  "https://www.youtube.com/embed/SOW5EfrTTsE?si=wrdA9mIdkde97cwU"
+    },
+    {
+      "id": 2,
+      "image": "../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg",
+      "titulo": "Un Lugar en el mundo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/d0eDO3lusC0?si=ruiqVeJBrJ9KNzxJ"
+    },
+    {
+      "id": 3,
+      "image": "../ASSETS/images/Peliculas/9reinas.jpg",
+      "titulo": "Nueve reinas",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/I42JYVjQkPI?si=5MNCPEHZUCMffPaU"
+    },
+    {
+      "id": 4,
+      "image": "../ASSETS/images/Peliculas/La_historia_oficial-.jpg",
+      "titulo": "La historia oficial",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/BibM13-Jd8E?si=7FR9ie_V6RIKmkKd"
+    },
+    {
+      "id": 5,
+      "image": "../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg",
+      "titulo": "El hijo de la novia",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/AoAU_eeSq4o?si=DUPzfV_MMAhffj1q"
+    },
+    {
+      "id": 6,
+      "image": "../ASSETS/images/Peliculas/relatos_salvajes.jpg",
+      "titulo": "Relatos salvajes",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/CzJM3jYKjAg?si=MRJG69x5FQq0mzzW"
+    },
+    {
+      "id": 7,
+      "image": "../ASSETS/images/Peliculas/Lugares_comunes.jpg",
+      "titulo": "Lugares comunes",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/xXQJbhcsAyI?si=HF_EUa12VdvhrUn8"
+    },
+    {
+      "id": 8,
+      "image": "../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg",
+      "titulo": "Tiempo de revancha",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/f6fIawRcRxs?si=3mjJZyVq2lUWeej_"
+    },
+    {
+      "id": 9,
+      "image": "../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg",
+      "titulo": "Rosaura a las diez",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/gltR19O0q1Q?si=AHpUTW1lpOJ5bhwk"
+    },
+    {
+      "id": 10,
+      "image": "../ASSETS/images/Peliculas/martin_hache.jpg",
+      "titulo": "Martin (Hache)",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/cUQIHRV3Vlc?si=UZ_AHoa7C5yX1758"
+    }
+  ],
+    "romanticas": [
+      {
+        "id": 1,
+      "image": "../ASSETS/images/Peliculas/el_secreto_de_sus_ojos.jpg",
+      "titulo": "El secreto de sus ojos",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link":  "https://www.youtube.com/embed/SOW5EfrTTsE?si=wrdA9mIdkde97cwU"
+    },
+    {
+      "id": 2,
+      "image": "../ASSETS/images/Peliculas/Un_lugar_en_el_mundo.jpg",
+      "titulo": "Un Lugar en el mundo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/d0eDO3lusC0?si=ruiqVeJBrJ9KNzxJ"
+    },
+    {
+      "id": 3,
+      "image": "../ASSETS/images/Peliculas/9reinas.jpg",
+      "titulo": "Nueve reinas",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/I42JYVjQkPI?si=5MNCPEHZUCMffPaU"
+    },
+    {
+      "id": 4,
+      "image": "../ASSETS/images/Peliculas/La_historia_oficial-.jpg",
+      "titulo": "La historia oficial",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/BibM13-Jd8E?si=7FR9ie_V6RIKmkKd"
+    },
+    {
+      "id": 5,
+      "image": "../ASSETS/images/Peliculas/El_hijo_de_la_novia.jpg",
+      "titulo": "El hijo de la novia",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/AoAU_eeSq4o?si=DUPzfV_MMAhffj1q"
+    },
+    {
+      "id": 6,
+      "image": "../ASSETS/images/Peliculas/relatos_salvajes.jpg",
+      "titulo": "Relatos salvajes",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/CzJM3jYKjAg?si=MRJG69x5FQq0mzzW"
+    },
+    {
+      "id": 7,
+      "image": "../ASSETS/images/Peliculas/Lugares_comunes.jpg",
+      "titulo": "Lugares comunes",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/xXQJbhcsAyI?si=HF_EUa12VdvhrUn8"
+    },
+    {
+      "id": 8,
+      "image": "../ASSETS/images/Peliculas/Tiempo_de_revancha.jpg",
+      "titulo": "Tiempo de revancha",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/f6fIawRcRxs?si=3mjJZyVq2lUWeej_"
+    },
+    {
+      "id": 9,
+      "image": "../ASSETS/images/Peliculas/Rosaura_a_las_diez.jpg",
+      "titulo": "Rosaura a las diez",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/gltR19O0q1Q?si=AHpUTW1lpOJ5bhwk"
+    },
+    {
+      "id": 10,
+      "image": "../ASSETS/images/Peliculas/martin_hache.jpg",
+      "titulo": "Martin (Hache)",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati assumenda autem quis dolorum temporibus aliquam facilis aut quidem minima aspernatur atque dolorem, alias quos omnis minus cupiditate dignissimos recusandae?",
+      "link": "https://www.youtube.com/embed/cUQIHRV3Vlc?si=UZ_AHoa7C5yX1758"
+    }
+  ]
+}

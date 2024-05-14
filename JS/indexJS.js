@@ -6,7 +6,6 @@ const formulario_registro = d.getElementById('formulario-registro');
 const nuevo_inicio_sesion = d.getElementById('inicio-sesion-new');
 const inicio_sesion = d.getElementById('inicio-sesion');
 
-
 d.addEventListener("DOMContentLoaded", (e) => {
   formulario_login.classList.remove('noDisplay');
   derivacion_registro.classList.remove('noDisplay');
@@ -32,18 +31,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
       derivacion_registro.classList.add('noDisplay');
       e.preventDefault();
     }
-    //***********/
-    /*if (e.target.matches('#avatar1') || e.target.matches('#avatar2') || e.target.matches('#avatar3') || e.target.matches('#avatar4') || e.target.matches('#avatar5') || e.target.matches('#avatar6') || e.target.matches('#avatar1-new')) {
-      window.location.href = "../pages/peliculas.html";
-      console.log("elegi una pelicula");
-      e.preventDefault();
-    }*/
-    //***********/
-    /*if (e.target.matches('#avatar1')) {
-      window.location.href = "../pages/peliculas.html";
-      e.preventDefault();
-      console.log("chanfle");
-    }*/
     //***********/
     if (e.target.matches('#home')) {
       console.log("click_en_home");
@@ -75,12 +62,5 @@ d.addEventListener("DOMContentLoaded", (e) => {
       window.location.href = "../pages/peliculas.html";
     }
   });
-
-  /*
-  setTimeout(() => {
-    formulario_login.classList.remove('noDisplay');
-    derivacion_registro.classList.remove('noDisplay');
-    loading.classList.add('noDisplay');
-  }, 2000);*/
 });
 
