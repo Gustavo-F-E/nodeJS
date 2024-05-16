@@ -1,3 +1,7 @@
+/**************************/
+/*    background-image    */
+/**************************/
+
 #background-image{
   position: fixed;
   top: 25vh;
@@ -177,4 +181,5 @@
       font-size: 2rem;
     }
   }
+  
 

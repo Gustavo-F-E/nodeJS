@@ -1,3 +1,7 @@
+/**************************/
+/*    card    */
+/**************************/
+
 #main-peliculas {
   grid-template-columns: 1fr 55vh 1fr;
   grid-template-rows: 25vh 35vh 40vh 0vh;
