@@ -527,7 +527,7 @@ main{
     }
   }
 
-  #ver-pelicula{
+  #ver-pelicula, #ver-series{
     grid-area: 2 / 2 / 3 / 3;
     padding: 0vw 15vw 0vw 0vw;
     align-self:self-start !important;
@@ -587,7 +587,7 @@ main{
         padding: 0.6rem;
       }
     }
-    #ver-pelicula{
+    #ver-pelicula, #ver-series{
       grid-area: 2 / 2 / 3 / 3;
       padding: 0vw 15vw 0vw 0vw;
       align-self:self-start !important;
@@ -647,7 +647,7 @@ main{
         padding: 0.8rem;
       }
     }
-    #ver-pelicula{
+    #ver-pelicula, #ver-series{
       grid-area: 2 / 2 / 3 / 3;
       padding: 0vw 15vw 0vw 0vw;
       align-self:self-start !important;
