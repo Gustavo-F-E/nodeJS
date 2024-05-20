@@ -138,10 +138,10 @@ function describir_peliculas(idContainer, ruta) {
         const cardHTML = `
         <article id="background-image-img"><img src="${pelicula_especifica.image}" alt="${pelicula_especifica.titulo}"></article>
         <article id="background-image-description">
-          <h3>"${pelicula_especifica.titulo}":</h3>
-          <p>"${pelicula_especifica.descripcion}"</p></article>
+          <h3>"${pelicula_especifica.titulo}"</h3>
+          <p>${pelicula_especifica.descripcion}</p></article>
         <article id="ver-pelicula">
-        Ver pelicula
+        Ver Trailer
         </article>
         `;
         container.innerHTML = cardHTML;

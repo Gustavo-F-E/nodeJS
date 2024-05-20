@@ -141,7 +141,7 @@ function describir_peliculas(idContainer, ruta) {
           <h3>"${pelicula_especifica.titulo}":</h3>
           <p>"${pelicula_especifica.descripcion}"</p></article>
         <article id="ver-pelicula">
-        Ver pelicula
+        Ver Series
         </article>
         `;
         container.innerHTML = cardHTML;
