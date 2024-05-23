@@ -24,9 +24,6 @@
         <!--meta property="og:image:width" content="1200"-->
         <!--meta property="og:image:height" content="630"-->
         <!--meta property="og:url" content="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
-        <style>
-
-        </style>
   </head>
   <body>
     <header>
@@ -52,41 +49,47 @@
           <form class="campo-imagen">
             <fieldset>
               <label id="nameLastname_label" for="nameLastname">Ingrese su nombre y apellido:</label>
-              <input type="text" placeholder="Nombre y apellido" name="nameLastname" id="nameLastname">
+              <input type="text" placeholder="Nombre y apellido" name="nameLastname" id="nameLastname" required>
             </div>
             </fieldset>
             <fieldset>
               <legend>Tipo de consulta:</legend>
               <div id="div1">
-                <input type="radio" id="problema_tecnico" name="tipo_consulta" value="problema_tecnico">
+                <input type="radio" id="problema_tecnico" name="tipo_consulta" value="problema_tecnico" checked required>
                 <label for="problema_tecnico">Problema técnico</label>
               </div>
-              <div id="div2">
-                <input type="radio" id="duda" name="tipo_consulta" value="duda">
-                <label for="duda">Duda</label>
-              </div>
-              <div  id="div3">
-                <input type="radio" id="queja" name="tipo_consulta" value="queja">
-                <label for="queja">Queja</label>
-              </div>
-              <div  id="div4">
-                <input type="radio" id="sugerencia" name="tipo_consulta" value="sugerencia">
+              <div  id="div2">
+                <input type="radio" id="sugerencia" name="tipo_consulta" value="sugerencia" required>
                 <label for="sugerencia">Sugerencia</label>
               </div>
             </fieldset>
             <fieldset class="campo-imagen" >
                 <label class="campo-imagen" for="captura_problema">Adjunte captura del problema:</label>
-                <input class="campo-imagen" type="file" id="captura_problema" name="captura_problema" webkit-no-file-text="Seleccione una imagen" accept="image/*">
+                <input class="campo-imagen" type="file" id="captura_problema" name="captura_problema" webkit-no-file-text="Seleccione una imagen" accept="image/*" required>
             </fieldset>
             <fieldset>
               <legend>Descripción del motivo:</legend>
-                <textarea id="descripcion_motivo" name="descripcion_motivo" placeholder="Por favor: describa brevemente el motivo de su consulta...." rows="4"></textarea>
+                <textarea id="descripcion_motivo" name="descripcion_motivo" placeholder="Por favor: describa brevemente el motivo de su consulta...." rows="4" required></textarea>
             </fieldset>
-            <fieldset>
-              <input id="submit-form-reg" type="submit">
+            <fieldset id="terminos-y-condiciones">
+              <div>
+                <input type="checkbox" id="acepto_terminos" name="acepto_terminos" required>
+                <label for="acepto_terminos">Acepto los términos y condiciones de VEO-VEO</label>
+              </div>
+              <div><button id="abrirModal">Ver términos y condiciones</button></div>
+              <div><input id="submit-form-reg" type="submit"></div>
             </fieldset>
           </form>
         </article>
+      </section>
+      <section id="modal" class="modal">
+        <div class="modal-contenido">
+          <span id="cerrarModal" class="close">&times;</span>
+          <h2>Términos y condiciones de Veo-Veo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed eros mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eu leo quam. Sed diam erat, convallis eget sem sed, auctor vitae odio. Donec euismod augue at metus tincidunt tincidunt. Nullam non nisi erat. Suspendisse potenti. Sed lacinia quam non enim blandit, eget mattis quam faucibus. Maecenas sit amet quam eget eros faucibus condimentum. Nullam euismod augue at metus tincidunt tincidunt. Nullam non nisi erat. Suspendisse potenti.</p>
+          <br>
+          <p>Para cerrar esta ventana presione <span>ESC</span>.</p>
+        </div>
       </section>
     </main>
     <aside>

@@ -73,11 +73,11 @@
       }
       &:nth-child(2){
         grid-area: 2 / 1 / 3 / 2;
-        height: 4rem;
+        height: 2rem;
         display: grid;
         gap: 0rem 0.5rem;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         legend{
           font-weight: 700;
           text-decoration: underline;
@@ -115,7 +115,7 @@
         }
         textarea{
           grid-area: 2 / 1 / 4 / 2;
-          height: 2.5rem;
+          height: 1.1rem;
           width: 15rem;
           justify-self: center;
           font-size: 0.5rem;
@@ -124,20 +124,6 @@
       }
       &:last-child{
         grid-area: 5 / 1 / 6 / 2;
-        input {
-          padding: 0.2rem;
-          font-size: 0.7rem;
-          font-weight: 700;
-          border: none;
-          border-color: transparent;
-          border-radius: 4%;
-          background-color: var(--color-naranja-logo-hover);
-          color: var(--color-principal-de-fondo);
-          width: 5rem;
-          &:hover{
-            background-color: var(--color-naranja-logo-form);
-          }
-        }
       }
     }
   }
@@ -145,12 +131,131 @@
 
 #div1{grid-area: 1 / 2 / 2 / 3;}
 #div2{grid-area: 2 / 2 / 3 / 3;}
-#div3{grid-area: 3 / 2 / 4 / 3;}
-#div4{grid-area: 4 / 2 / 5 / 3;}
 
 #captura_problema .no-files-selected{
     display: none;
 }
+
+#abrirModal {
+  padding: 0.3rem;
+  font-size: 0.6rem;
+  width: 8rem;
+  height: 1.2rem;
+  background-color: var(--color-link);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  border-radius: 5%;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: var(--color-modal_fondo);
+}
+
+/* Estilos para el contenido del modal */
+.modal-contenido {
+  background-color: var(--color-white);
+  margin: 15% auto; /* Posicionado en el centro */
+  padding: 1rem;
+  border: 0.1rem solid var(--color-principal-de-fondo-hover);
+  width: 80%; /* Ancho del 80% */
+  h2{
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  p{
+    &:first-child{
+      text-align: justify;
+    }
+    &:last-child{
+      color: var(--color-principal-de-fondo);
+      font-style: italic;
+      font-weight: 200;
+      font-size: 1rem;
+      span{
+        color: var(--color-link);
+      }
+    }
+    
+  }
+}
+
+/* Estilos para el botón de cierre (X) */
+.close {
+  color: var(--color-principal-de-fondo);
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Al pasar el cursor sobre el botón de cierre, se vuelve rojo */
+.close:hover,
+.close:focus {
+  color: var(--color-naranja-logo-dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Ocultar el modal cuando se hace clic en el botón de cierre (X) */
+.close {
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--color-naranja-logo-dark);
+}
+
+#terminos-y-condiciones{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  div{
+    &:first-child{
+      grid-area: 1 / 1 / 2 / 3;
+      justify-self: center;
+      align-self:center;
+      margin-top: 0.2rem;
+      height: 1.2rem;
+    }
+
+    &:nth-child(2){
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    &:last-child{
+      grid-area: 2 / 2 / 3 / 3;
+      input {
+        align-self: center;
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        border: none;
+        border-color: transparent;
+        border-radius: 5%;
+        background-color: var(--color-naranja-logo-hover);
+        color: var(--color-principal-de-fondo);
+        width: 5rem;
+        height: 1.2rem;
+        margin-left: 0.3rem;
+        &:hover{
+          background-color: var(--color-naranja-logo-form);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
   #formulario_login{
@@ -203,13 +308,36 @@
       }
     }
   }
+
+  #abrirModal {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0.6rem;
+  }
+
+  #terminos-y-condiciones{
+    div{
+      &:last-child{
+        input {
+          padding: 0.2rem;
+          font-size: 0.7rem;
+          border-radius: 0.6rem;
+          width: 8rem;
+          height: 2rem;
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
     #formulario_login{
       grid-area: 1 / 3 / 4 / 4;
       gap: 0rem 1rem;
-      padding: 5vh 0vh;
+      padding: 2vh 0vh;
     }
     
     #formulario-de-contacto{
@@ -222,7 +350,7 @@
     
     #form-reg-2{
       form{
-        gap: 0.8rem 0rem;
+        gap: 0.4rem 0rem;
         fieldset{
           font-size: 0.8rem;
           &:first-child{
@@ -234,7 +362,7 @@
           }
           &:nth-child(2){
             gap: 0rem 1rem;
-            height: 5rem;
+            height: 2rem;
           }
           &:nth-child(3){
             input{
@@ -253,6 +381,29 @@
               padding: 0.3rem;
               font-size: 1rem;
             }
+          }
+        }
+      }
+    }
+
+    #abrirModal {
+      font-size: 0.8rem;
+      font-weight: 700;
+      width: 12rem;
+      height: 1.8rem;
+      border-radius: 0.6rem;
+    }
+  
+    #terminos-y-condiciones{
+      div{
+        &:last-child{
+          input {
+            padding: 0.2rem;
+            font-size: 0.7rem;
+            border-radius: 0.6rem;
+            width: 8rem;
+            height: 1.8rem;
+            margin-left: 0.8rem;
           }
         }
       }

@@ -1,9 +1,19 @@
 # NodeJS
 Proyecto Front End del curso Full Stack Codo a Codo 2024
 
+## Integrantes del grupo
+Los integrantes (activos) de este proyecto son:  
+-  Sara Nuñez (abigailsara190@gmail.com).  
+-  Eichhorn Gustavo (eichhorn.gustavof@gmail.com).
+
 ## Veo-Veo
 Pagina web pensada para reproducir películas por stream.
 Para ahorrar recursos, se decidió que las peliculas fueran simples iframes de youtube.
+
+## Repositorio en GITHUB:
+https://github.com/Gustavo-F-E/nodeJS
+## Despliegue en Netlify:
+https://grupo-24.netlify.app/
 
 ## Logo
 ![Logo](ASSETS/images/logo_veo_veo.png)
@@ -14,7 +24,11 @@ La página del index, pagina de películas, página de series, página de contac
 ![Paginas](ASSETS/images/pages.png)
 
 ## Formulario de contacto:
-Proximamente....  
+
+La página cuenta con un formulario en la página 'Contacto' que tiene 5 campos, e incluye un select, un chekbox, un radiobutton, un textarea, se debe subir una imagen y tiene validaciones de javascript para que los campos sean obligatorios.  
+![Paginas](ASSETS/images/formulario_de_contacto.PNG)  
+![Paginas](ASSETS/images/formulario_de_contacto2.PNG)  
+![Paginas](ASSETS/images/formulario_de_contacto3.PNG)  
 
 ## 3 Puntos de Corte en cada pagina:
 Sitio tipo Mobile-first.  
@@ -126,10 +140,6 @@ Se utilizó un favicon:
 ```html
   <link rel="icon" type="image/x-icon" href="ASSETS/favicon/clapperboard.png">
 ```
-## Repositorio en GITHUB:
-https://github.com/Gustavo-F-E/nodeJS
-## Despliegue en Netlify:
-https://grupo-24.netlify.app/
 ## Validacion en https://validator.w3.org/ :
 Sin errores.  
 ![Validator 1](ASSETS/images/validator1.PNG)  
