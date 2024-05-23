@@ -24,56 +24,6 @@
         <!--meta property="og:image:width" content="1200"-->
         <!--meta property="og:image:height" content="630"-->
         <!--meta property="og:url" content="https://glittery-sherbet-f4dc32.netlify.app/#" /-->
-        <style>
-          #grupo_24{
-            display: flexbox;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            width: 80vw;
-            margin-top: 10vh;
-            margin-bottom: 10vh;
-            color: rgba(255,255,255,1);
-            article{
-              display: grid;
-              grid-template-areas:
-                "avatar nombre"
-                "avatar mail";
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(4, 1fr);
-                justify-content: center;
-                align-items: center;
-                &:last-child{
-                  padding-bottom: 2rem;
-                }
-            }
-          }
-
-          .avatar{
-            grid-area: 1/1/4/2;
-            justify-self: end;
-            margin-right: 3rem;
-            img{
-              width: 15vh;
-              height: auto;
-            }
-          }
-
-          .nombre-y-apellido{
-            grid-area: 2/2/3/3;
-            justify-self: start;
-            font-size: 1.5rem;
-            font-weight: 800;
-          }
-
-          .mail{
-            grid-area: 3/2/4/3;
-            justify-self: start;
-            font-size: 0.8rem;
-            font-weight: 300;
-          }
-        </style>
   </head>
   <body>
     <header>
@@ -91,19 +41,9 @@
           <div class="mail">abigailsara190@gmail.com</div>
         </article>
         <article>
-          <div class="avatar"><img src="../ASSETS/svg/user_green.svg" alt="usuario-verde" class="img-user-avatar"></div>
-          <div class="nombre-y-apellido">Daniel Benítez</div>
-          <div  class="mail">sparkychispítas6@gmail.com</div>
-        </article>
-        <article>
           <div class="avatar"><img src="../ASSETS/svg/user_blue.svg" alt="usuario-azul" class="img-user-avatar"></div>
           <div class="nombre-y-apellido">Gustavo Francisco Eichhorn </div>
           <div  class="mail">eichhorn.gustavof@gmail.com</div>
-        </article>
-        <article>
-          <div class="avatar"><img src="../ASSETS/svg/user_violet.svg" alt="usuario-violeta" class="img-user-avatar"></div>
-          <div class="nombre-y-apellido">Edgardo Padovan</div>
-          <div class="mail">edgardopadovan@gmail.com</div>
         </article>
       </section>
     </main>
