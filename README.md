@@ -21,8 +21,20 @@ https://grupo-24.netlify.app/
 ## Estructura con 5 Paginas:
 La página del index, pagina de películas, página de series, página de contacto (con el formulario pedido) y la pagina de presentación de los integrantes del grupo.  
 
-![Paginas](ASSETS/images/pages.png)
+![Paginas](ASSETS/images/pages.png)  
 
+## SEO:
+```html
+    <!--Metaetiquetas-->
+    <link rel="canonical" href="https://grupo-24.netlify.app/" />
+    <!--colocar direccion real cuando se haga el despliegue---->
+    <meta property="og:title" content="Veo Veo" />
+    <meta property="og:description" content="Veo Veo: Pagina web pensada para reproducir películas por stream."/>
+    <meta property="og:image" content="../ASSETS/images/logo_veo_veo.png"/>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://grupo-24.netlify.app/" />
+```  
 ## Formulario de contacto:
 
 La página cuenta con un formulario en la página 'Contacto' que tiene 5 campos, e incluye un select, un chekbox, un radiobutton, un textarea, se debe subir una imagen y tiene validaciones de javascript para que los campos sean obligatorios.  
