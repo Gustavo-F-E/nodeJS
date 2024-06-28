@@ -5,6 +5,7 @@ Proyecto Front End del curso Full Stack Codo a Codo 2024
 Los integrantes (activos) de este proyecto son:  
 -  Sara Nuñez (abigailsara190@gmail.com).  
 -  Eichhorn Gustavo (eichhorn.gustavof@gmail.com).
+-  Gisela Spina (calzadosbranca@gmail.com).
 
 ## Veo-Veo
 Pagina web pensada para reproducir películas por stream.
