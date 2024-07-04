@@ -1,14 +1,14 @@
-// src/controllers/movieController.js
+// src/controllers/usuariosController.js
 
 /**
  * El controlador es el que tendrá los cambios más importantes 
  * y es el que hará el tratamiento de la información.
  * En este archivo tenemos que codificar los métodos
- * .getAllMovies
- * .getMovieById
- * .createMovie
- * .updateMovie
- * .deleteMovie
+ * .getAllUsuarios
+ * .getUsuarioById
+ * .createUsuario
+ * .updateUsuario
+ * .deleteUsuario
  */
 
 //1- Importamos el módulo propio db
@@ -16,10 +16,10 @@
 // Es la conexión a la base de datos.
 const db = require('../db/db');
 
-//2- Método para obtener todas las peliculas
-const getAllMovies = (req, res) => {
+//2- Método para obtener todas los usuarios
+const getAllUsuarios = (req, res) => {
     // Creamos una consulta
-    const sql = 'SELECT * FROM peliculas';
+    const sql = 'SELECT * FROM usuarios';
     console.log("esta es la db: " , db)
     // Utilizamos .query para enviar la consulra a la bbdd
     // Primer parametro la consulta, segundo una función callback
@@ -31,22 +31,22 @@ const getAllMovies = (req, res) => {
     });
 };
 
-//3- Método para obtener peliculas con consultas parametrizadas
-const getMovieById = (req, res) => {
+//3- Método para obtener usuarios con consultas parametrizadas
+const getUsuarioById = (req, res) => {
     // Tomamos la solicitud y extraemos su id
     // Esta es una notacion de desestructuración {id}
     // en la req viaja /movies/1, la expresion {id} estrae el nro 1 de la ruta
     // y la almacena dentro de la variable id
-    const { idpeliculas } = req.params;
+    const { username } = req.params;
 
     // Creamos la consulta con marcador de posición
-    const sql = 'SELECT * FROM peliculas WHERE idpeliculas = ?';
+    const sql = 'SELECT * FROM usuarios WHERE username = ?';
 
     // Los marcadores de posición se utilizan para evitar la inyección de SQL, 
     // ya que los valores se escapan automáticamente.
 
     // Interactuamos con la bbdd, pasamos la consulta anterior
-    db.query(sql, [idpeliculas], (err, result) => {
+    db.query(sql, [username], (err, result) => {
         //en caso de error
         if (err) {console.log(err);return;} 
         //enviamos en formato json
@@ -55,71 +55,71 @@ const getMovieById = (req, res) => {
 };
 
 //4- Método para crear una película
-const createMovie = (req, res) => {
+const createUsuario = (req, res) => {
     // Desestructuramos la request
-    const { ruta_img_peliculas, titulo, descripcion, link, categoria, apto_menores } = req.body;
+    const { username, email, password, apto_menores } = req.body;
     // Creamos la consulta con marcadores de posición
-    const sql = 'INSERT INTO peliculas (ruta_img_peliculas, titulo, descripcion, link, categoria, apto_menores) VALUES (?, ?, ?)';
+    const sql = 'INSERT INTO usuarios (username, email, password, apto_menores) VALUES (?, ?, ?)';
     // Pasamos la consulta
     //.query(consulta, array_con_valores, funcion_callback)
-    db.query(sql, [ruta_img_peliculas, titulo, descripcion, link, categoria, apto_menores], (err, result) => {
+    db.query(sql, [username, email, password, apto_menores], (err, result) => {
         //en caso de error
         if (err)  {console.log(err);return;} 
         //enviamos mensaje de exito con info de la peli
-        res.json({ message: 'Película creada', movieId: result.insertId });
+        res.json({ message: 'Usuario creado', usuariosId: result.insertId });
     });
 };
 
 //5- Método para modificar una película (COMPLETAR)
-const updateMovie = (req, res)=>{
+const updateUsuario = (req, res)=>{
     // Desestructuramos la peticion
     // const id = req.params.id
-    const {idpeliculas} = req.params;
-    const {ruta_img_peliculas, titulo, descripcion, link, categoria, apto_menores} = req.body;
+    const {username} = req.params;
+    const {email, password, apto_menores} = req.body;
     // const title = req.body.title;
 
     //Consulta SQL con marcadores de posicion
-    const sql = 'UPDATE peliculas SET ruta_img_peliculas = ?, titulo = ?, descripcion = ?, link = ?, categoria = ?, apto_menores = ? WHERE idpeliculas = ?';
+    const sql = 'UPDATE usuarios SET email = ?, password = ?, apto_menores = ?, create_time = ?  WHERE username = ?';
 
     //Pasamos la consulta
-    db.query(sql, [ruta_img_peliculas, titulo, descripcion, link, categoria, apto_menores, idpeliculas],(err, result)=>{
+    db.query(sql, [remail, password, create_time, apto_menores, username],(err, result)=>{
         //si hay error
         if(err){
             console.log(err);
             return;
         }
         //si todo va bien
-        res.json({mensaje: "Película actualizada"});
+        res.json({mensaje: "Usuario actualizado"});
     })
 }
 
 //6- Método para borrar una película(COMPLETAR)
-const deleteMovie = (req, res)=>{
+const deleteUsuario = (req, res)=>{
     // Desestructuramos la consulta
-    const {idpeliculas} = req.params;
+    const {username} = req.params;
 
     // Consulta sql para borrar una peli
-    const sql = 'DELETE FROM peliculas WHERE idpeliculas = ?';
+    const sql = 'DELETE FROM usuarios WHERE username = ?';
 
     // Enviamos la consulta a la bbdd
-    db.query(sql,[idpeliculas],(err,result)=>{
+    db.query(sql,[username],(err,result)=>{
         //si hay error
         if(err){
             console.log(err);
             return;
         }
         //si todo va bien
-        res.json({mensaje: "Película borrada con éxito"});
+        res.json({mensaje: "Usuario borrado con éxito"});
     });
 };
 
-//7- Exportamos los módulos que serán utilizados en moviesRouter.js
+//7- Exportamos los módulos que serán utilizados en usuariosRouter.js
 module.exports = {
-    getAllMovies,
-    getMovieById,
-    createMovie,
-    updateMovie,
-    deleteMovie
+    getAllUsuarios,
+    getUsuarioById,
+    createUsuario,
+    updateUsuario,
+    deleteUsuario
 };
 
 //8- Pasamos a configurar db.js
