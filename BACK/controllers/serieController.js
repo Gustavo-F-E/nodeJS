@@ -37,16 +37,16 @@ const getSerieById = (req, res) => {
     // Esta es una notacion de desestructuración {id}
     // en la req viaja /series/1, la expresion {id} estrae el nro 1 de la ruta
     // y la almacena dentro de la variable id
-    const { idseries } = req.params;
+    const { id } = req.params;
 
     // Creamos la consulta con marcador de posición
-    const sql = 'SELECT * FROM series WHERE idseries = ?';
+    const sql = 'SELECT * FROM series WHERE id = ?';
 
     // Los marcadores de posición se utilizan para evitar la inyección de SQL, 
     // ya que los valores se escapan automáticamente.
 
     // Interactuamos con la bbdd, pasamos la consulta anterior
-    db.query(sql, [idseries], (err, result) => {
+    db.query(sql, [id], (err, result) => {
         //en caso de error
         if (err) {console.log(err);return;} 
         //enviamos en formato json
@@ -74,15 +74,15 @@ const createSerie = (req, res) => {
 const updateSerie = (req, res)=>{
     // Desestructuramos la peticion
     // const id = req.params.id
-    const {idseries} = req.params;
+    const {id} = req.params;
     const {ruta_img_series, titulo, descripcion, link, categoria, apto_menores} = req.body;
     // const title = req.body.title;
 
     //Consulta SQL con marcadores de posicion
-    const sql = 'UPDATE series SET ruta_img_series = ?, titulo = ?, descripcion = ?, link = ?, categoria = ?, apto_menores = ? WHERE idseries = ?';
+    const sql = 'UPDATE series SET ruta_img_series = ?, titulo = ?, descripcion = ?, link = ?, categoria = ?, apto_menores = ? WHERE id = ?';
 
     //Pasamos la consulta
-    db.query(sql, [ruta_img_series, titulo, descripcion, link, categoria, apto_menores, idseries],(err, result)=>{
+    db.query(sql, [ruta_img_series, titulo, descripcion, link, categoria, apto_menores, id],(err, result)=>{
         //si hay error
         if(err){
             console.log(err);
@@ -96,13 +96,13 @@ const updateSerie = (req, res)=>{
 //6- Método para borrar una Serie(COMPLETAR)
 const deleteSerie = (req, res)=>{
     // Desestructuramos la consulta
-    const {idseries} = req.params;
+    const {id} = req.params;
 
     // Consulta sql para borrar una peli
-    const sql = 'DELETE FROM series WHERE idseries = ?';
+    const sql = 'DELETE FROM series WHERE id = ?';
 
     // Enviamos la consulta a la bbdd
-    db.query(sql,[idseries],(err,result)=>{
+    db.query(sql,[id],(err,result)=>{
         //si hay error
         if(err){
             console.log(err);

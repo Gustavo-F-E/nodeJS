@@ -37,16 +37,16 @@ const getConsultaById = (req, res) => {
     // Esta es una notacion de desestructuración {id}
     // en la req viaja /consultass/1, la expresion {id} estrae el nro 1 de la ruta
     // y la almacena dentro de la variable id
-    const { idconsultas } = req.params;
+    const { id } = req.params;
 
     // Creamos la consulta con marcador de posición
-    const sql = 'SELECT * FROM consultas WHERE idconsultas = ?';
+    const sql = 'SELECT * FROM consultas WHERE id = ?';
 
     // Los marcadores de posición se utilizan para evitar la inyección de SQL, 
     // ya que los valores se escapan automáticamente.
 
     // Interactuamos con la bbdd, pasamos la consulta anterior
-    db.query(sql, [idconsultas], (err, result) => {
+    db.query(sql, [id], (err, result) => {
         //en caso de error
         if (err) {console.log(err);return;} 
         //enviamos en formato json
@@ -57,16 +57,16 @@ const getConsultaById = (req, res) => {
 //4- Método para crear una película
 const createConsulta = (req, res) => {
     // Desestructuramos la request
-    const { fecha_consulta, nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema } = req.body;
+    const { nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema } = req.body;
     // Creamos la consulta con marcadores de posición
-    const sql = 'INSERT INTO consultas (fecha_consulta, nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema) VALUES (?, ?, ?)';
+    const sql = 'INSERT INTO consultas (nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema) VALUES (?, ?, ?, ?)';
     // Pasamos la consulta
     //.query(consulta, array_con_valores, funcion_callback)
-    db.query(sql, [fecha_consulta, nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema], (err, result) => {
+    db.query(sql, [nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema], (err, result) => {
         //en caso de error
         if (err)  {console.log(err);return;} 
         //enviamos mensaje de exito con info de la peli
-        res.json({ message: 'Consulta creada', consultaId: result.insertId });
+        res.json({ message: 'Consulta creada', id: result.insertId });
     });
 };
 
@@ -74,15 +74,15 @@ const createConsulta = (req, res) => {
 const updateConsulta = (req, res)=>{
     // Desestructuramos la peticion
     // const id = req.params.id
-    const {idconsultas} = req.params;
-    const {fecha_consulta, nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema} = req.body;
+    const {id} = req.params;
+    const {nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema} = req.body;
     // const title = req.body.title;
 
     //Consulta SQL con marcadores de posicion
-    const sql = 'UPDATE consultas SET title = ?, director = ?, year = ? WHERE idconsultas = ?';
+    const sql = 'UPDATE consultas SET nombre_y_apellido = ?, tipo_consulta = ?, URL_captura_problema = ?, descripcion_problema = ? WHERE id = ?';
 
     //Pasamos la consulta
-    db.query(sql, [fecha_consulta, nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema, idconsultas],(err, result)=>{
+    db.query(sql, [nombre_y_apellido, tipo_consulta, URL_captura_problema, descripcion_problema, id],(err, result)=>{
         //si hay error
         if(err){
             console.log(err);
@@ -96,13 +96,13 @@ const updateConsulta = (req, res)=>{
 //6- Método para borrar una película(COMPLETAR)
 const deleteConsulta = (req, res)=>{
     // Desestructuramos la consulta
-    const {idconsultas} = req.params;
+    const {id} = req.params;
 
     // Consulta sql para borrar una peli
-    const sql = 'DELETE FROM consultas WHERE idconsultas = ?';
+    const sql = 'DELETE FROM consultas WHERE id = ?';
 
     // Enviamos la consulta a la bbdd
-    db.query(sql,[idconsultas],(err,result)=>{
+    db.query(sql,[id],(err,result)=>{
         //si hay error
         if(err){
             console.log(err);
