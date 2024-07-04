@@ -30,19 +30,9 @@ A continuación, se resumen los comandos para generar cada una de las tablas ant
 -- Crear esquema de la página web:
 CREATE SCHEMA `veoveo` ;
 
--- Crear tabla del formulario de contacto:
-CREATE TABLE `veoveo`.`consultas` (
-  `idconsultas` INT NOT NULL AUTO_INCREMENT,
-  `fecha_consulta` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP(),
-  `nombre_y_apellido` VARCHAR(60) NOT NULL,
-  `tipo_consulta` VARCHAR(20) NOT NULL,
-  `URL_captura_problema` VARCHAR(100) NOT NULL,
-  `descripcion_problema` VARCHAR(1000) NOT NULL,
-  PRIMARY KEY (`idconsultas`));
-
 -- Crear tabla de datos de las películas:
 CREATE TABLE `veoveo`.`peliculas` (
-  `idpeliculas` INT NOT NULL,
+  `idpeliculas` INT NOT NULL AUTO_INCREMENT,
   `ruta_img_peliculas` VARCHAR(200) NOT NULL,
   `titulo` VARCHAR(60) NOT NULL,
   `descripcion` VARCHAR(1000) NOT NULL,
@@ -53,7 +43,7 @@ CREATE TABLE `veoveo`.`peliculas` (
 
 -- Crear tabla de datos de las series:
 CREATE TABLE `veoveo`.`series` (
-  `idseries` INT NOT NULL,
+  `idseries` INT NOT NULL AUTO_INCREMENT,
   `ruta_img_series` VARCHAR(200) NOT NULL,
   `titulo` VARCHAR(60) NOT NULL,
   `descripcion` VARCHAR(1000) NOT NULL,
@@ -69,12 +59,27 @@ CREATE TABLE `veoveo`.`usuarios` (
   `password` VARCHAR(32) NOT NULL,
   `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP(),
   `apto_menores` VARCHAR(3) NOT NULL,
-  PRIMARY KEY (`username`));
+  PRIMARY KEY (`email`));
+
+-- Crear tabla del formulario de contacto
+CREATE TABLE `veoveo`.`consultas` (
+  `idconsultas` INT NOT NULL AUTO_INCREMENT,
+  `fecha_consulta` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP(),
+  `email` VARCHAR(60) NOT NULL,
+  `tipo_consulta` VARCHAR(20) NOT NULL,
+  `URL_captura_problema` VARCHAR(100) NOT NULL,
+  `descripcion_problema` VARCHAR(1000) NOT NULL,
+  PRIMARY KEY (`idconsultas`),
+  CONSTRAINT `fk_email_usuario` FOREIGN KEY (`email`)
+    REFERENCES `veoveo`.`usuarios` (`email`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
 
 -- Crear registros en la tabla de usuarios:
-INSERT INTO `veoveo`.`user` (`username`, `email`, `password`, `menor_18`) VALUES ('gustavo', 'eichhorn.gustavof@gmail.com', '123456');
-INSERT INTO `veoveo`.`user` (`username`, `email`, `password`, `menor_18`) VALUES ('sara', 'abigailsara190@gmail.com', '123456', 'NO');
-INSERT INTO `veoveo`.`user` (`username`, `email`, `password`, `menor_18`) VALUES ('gisela', 'calzadosbranca@gmail.com', '123456','NO');
+INSERT INTO `veoveo`.`usuarios` (`username`, `email`, `password`, `apto_menores`) VALUES ('gustavo', 'eichhorn.gustavof@gmail.com', '123456','NO');
+INSERT INTO `veoveo`.`usuarios` (`username`, `email`, `password`, `apto_menores`) VALUES ('sara', 'abigailsara190@gmail.com', '123456', 'NO');
+INSERT INTO `veoveo`.`usuarios` (`username`, `email`, `password`, `apto_menores`) VALUES ('gisela', 'calzadosbranca@gmail.com', '123456','NO');
 
 -- Crear registros en la tabla de películas:
 INSERT INTO `veoveo`.`peliculas` (`ruta_img_peliculas`, `titulo`, `descripcion`, `link`, `categoria`, `apto_menores`) VALUES ('../ASSETS/images/Peliculas/Ranking/el_secreto_de_sus_ojos.jpg', 'El secreto de sus ojos', 'El secreto de sus ojos es una aclamada película argentina dirigida por Juan José Campanella. La historia sigue a Benjamín Espósito, un oficial de justicia retirado, que reabre un caso de violación y asesinato de los años 70 para escribir una novela. Mientras busca la verdad, se enfrenta a viejos amores y obsesiones. Con una notable actuación de Ricardo Darín y un guion intrigante, esta obra maestra ganó el Óscar a la Mejor Película Extranjera en 2010.', 'https://www.youtube.com/embed/SOW5EfrTTsE?si=wrdA9mIdkde97cwU', 'diez_mejores', 'SI');
@@ -161,8 +166,7 @@ INSERT INTO `veoveo`.`series` (`ruta_img_series`, `titulo`, `descripcion`, `link
 INSERT INTO `veoveo`.`series` (`ruta_img_series`, `titulo`, `descripcion`, `link`, `categoria`, `apto_menores`) VALUES ('../ASSETS/images/Series/romance/dulce amor.jpg', 'Dulce amor', 'Dulce Amor es una serie romántica argentina que narra la historia de dos personas de mundos opuestos que se enamoran, enfrentando la oposición de sus familias y los desafíos del destino. Con un toque de drama y pasión, esta serie ofrece una historia de amor épica y emocionante.', 'https://www.youtube.com/embed/wPirJWZY3_s?si=E40cDztY1YOHF1tQ', 'romanticas', 'SI');
 
 -- Crear registros en la tabla comentarios de los usuarios:
-INSERT INTO `veoveo`.`consultas` (`nombre_y_apellido`, `tipo_consulta`, `descripcion_problema`) VALUES ('Cosme Fulanito', 'Problema técnico', 'No funciona');
-INSERT INTO `veoveo`.`consultas` (`nombre_y_apellido`, `tipo_consulta`, `descripcion_problema`) VALUES ('Juan Perez', 'Sugerencia', 'Copien a Netflix');
-
+INSERT INTO `veoveo`.`consultas` (`email`, `tipo_consulta`, `descripcion_problema`, `URL_captura_problema`) VALUES ('abigailsara190@gmail.com', 'Problema técnico', 'No funciona','');
+INSERT INTO `veoveo`.`consultas` (`email`,`tipo_consulta`, `descripcion_problema`,`URL_captura_problema`) VALUES ('calzadosbranca@gmail.com', 'Sugerencia', 'Copien a Netflix','');
 
 ```  
