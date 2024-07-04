@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "admin",
-  port: 3000,
+  port:  3306,
   database: "veoveo" // Especifica aquí la base de datos
 });
 
