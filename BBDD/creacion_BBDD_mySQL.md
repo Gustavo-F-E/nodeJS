@@ -166,7 +166,6 @@ INSERT INTO `veoveo`.`series` (`ruta_img_series`, `titulo`, `descripcion`, `link
 INSERT INTO `veoveo`.`series` (`ruta_img_series`, `titulo`, `descripcion`, `link`, `categoria`, `apto_menores`) VALUES ('../ASSETS/images/Series/romance/dulce amor.jpg', 'Dulce amor', 'Dulce Amor es una serie romántica argentina que narra la historia de dos personas de mundos opuestos que se enamoran, enfrentando la oposición de sus familias y los desafíos del destino. Con un toque de drama y pasión, esta serie ofrece una historia de amor épica y emocionante.', 'https://www.youtube.com/embed/wPirJWZY3_s?si=E40cDztY1YOHF1tQ', 'romanticas', 'SI');
 
 -- Crear registros en la tabla comentarios de los usuarios:
-INSERT INTO `veoveo`.`consultas` (`email`, `tipo_consulta`, `descripcion_problema`, `URL_captura_problema`) VALUES ('abigailsara190@gmail.com', 'Problema técnico', 'No funciona','');
-INSERT INTO `veoveo`.`consultas` (`email`,`tipo_consulta`, `descripcion_problema`,`URL_captura_problema`) VALUES ('calzadosbranca@gmail.com', 'Sugerencia', 'Copien a Netflix','');
-
+INSERT INTO `veoveo`.`consultas` (`nombre_y_apellido`,`tipo_consulta`,`URL_captura_problema`, `descripcion_problema`) VALUES ('Cosme Fulanito', 'Problema técnico','', 'No funciona');
+INSERT INTO `veoveo`.`consultas` (`nombre_y_apellido`,`tipo_consulta`,`URL_captura_problema`, `descripcion_problema`) VALUES ('Juan Perez', 'Sugerencia','', 'Copien a Netflix');
 ```  
